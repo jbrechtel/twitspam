@@ -1,0 +1,70 @@
+body
+{
+    background-color:#eee;    
+    font-family:Helvetica;
+    font-size:13pt;
+}
+input.text
+{
+    font-size:14pt;
+    font-weight:bold;
+    border-color:#ccc;
+}
+input.button
+{
+    
+}
+div#header
+{
+    text-align:center
+}
+
+div#main
+{
+    text-align:center
+
+}
+
+p.note
+{
+    font-style:italic;
+
+}
+
+span#message
+{
+    font-size:15pt;
+    text-align:center;
+}
+span.spam
+{
+    color:purple;
+}
+
+span.normal
+{
+    color:blue;
+}
+
+span.error
+{
+	color:red;
+
+}
+
+#footer
+{
+     font-size: 12px;
+     background-color: #ddd;
+     text-align: center;
+     position: absolute;
+     bottom: 0px;
+     left: 0px;
+     width: 100%;
+     height: 25px;
+}
+
+img
+{
+  border:none;
+}

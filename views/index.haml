@@ -1,0 +1,35 @@
+!!!
+%html(xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en")
+	%head
+		%title TwitSpam
+		%meta(http-equiv="Content-Type" content="text/html; charset=utf-8")
+		= css "twitter_spam.css"
+		= js "http://cdn.jquerytools.org/1.0.2/jquery.tools.min.js"
+		= js "ga.js"
+		= js "twitspam.js"
+
+	%body
+	#header
+		%a(href="/")
+			= image("twitter_spam.png")
+	#main
+		%form(action="/check" id="form")
+			%p
+				%label(for="username") Are they a spammer?
+				%input(type="text" class="text" id="username" name="username")
+				%input(type="button" id="submit" class="button" value="check")
+		%span(id="message" style="display:none")
+		
+		#footer
+			Copyright 2009 James Brechtel - 
+			%a(href="http://www.twitter.com/jbrechtel")
+				Follow me on Twitter
+			-
+			%a(href="http://www.google.com/profiles/jbrechtel")
+				My profile
+			-
+			%a(href="http://blog.brechtel.us")
+				My Blog
+			-
+			%a(href="/static/privacy.html")
+				Privacy Policy
