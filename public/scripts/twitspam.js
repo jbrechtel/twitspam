@@ -10,11 +10,7 @@
     {
         hideMessage();
         var username = $("#username").val();
-        if(username == "")
-        {
-            showMessage("Please enter a username", "info");
-            return false;
-        }
+        if(username == "") return false;
 
                 $.get("/check", { username: username },
                 function(result)

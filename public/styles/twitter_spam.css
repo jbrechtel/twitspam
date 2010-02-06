@@ -1,59 +1,42 @@
-body
-{
+body {
     background-color:#eee;    
     font-family:Helvetica;
     font-size:13pt;
 }
-input.text
-{
+input.text {
     font-size:14pt;
     font-weight:bold;
     border-color:#ccc;
 }
-input.button
-{
-    
-}
-div#header
-{
+div#header {
     text-align:center
 }
 
-div#main
-{
+div#main {
     text-align:center
-
 }
 
-p.note
-{
+p.note {
     font-style:italic;
-
 }
 
-span#message
-{
+span#message {
     font-size:15pt;
     text-align:center;
 }
-span.spam
-{
+span.spam {
     color:purple;
 }
 
-span.normal
-{
+span.normal {
     color:blue;
 }
 
-span.error
-{
+span.error {
 	color:red;
 
-}
 
-#footer
-{
+#footer {
      font-size: 12px;
      background-color: #ddd;
      text-align: center;
@@ -64,7 +47,14 @@ span.error
      height: 25px;
 }
 
-img
-{
+img {
   border:none;
+}
+
+a.corner {
+  	position: absolute;
+	right: 0;
+	top: 0;
+	text-indent: -999em;
+	text-decoration: none;}
 }

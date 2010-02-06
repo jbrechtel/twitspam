@@ -8,28 +8,21 @@
 		= js "ga.js"
 		= js "twitspam.js"
 
-	%body
+	%body(onload="lookup()")
 	#header
 		%a(href="/")
-			= image("twitter_spam.png")
+			%img(src="images/twitter_spam.png" border="0")
+
 	#main
 		%form(action="/check" id="form")
 			%p
 				%label(for="username") Are they a spammer?
-				%input(type="text" class="text" id="username" name="username")
+				%input(type="text" class="text" id="username" name="username" value="#{username}")
 				%input(type="button" id="submit" class="button" value="check")
 		%span(id="message" style="display:none")
 		
+		%a(href="javascript:(function() { if(window.location.href.match(/twitter/) != null) { username = window.location.href.replace('http://twitter.com/','');window.open('http://www.twitspam.us/?username=' + username,'twitspam_bookmarklet','width=600,height=300');}else {alert('Unable to find twitter user!');}})()")="Twitter Spam Bookmarklet"
+		
+		
+
 		#footer
-			Copyright 2009 James Brechtel - 
-			%a(href="http://www.twitter.com/jbrechtel")
-				Follow me on Twitter
-			-
-			%a(href="http://www.google.com/profiles/jbrechtel")
-				My profile
-			-
-			%a(href="http://blog.brechtel.us")
-				My Blog
-			-
-			%a(href="/static/privacy.html")
-				Privacy Policy
