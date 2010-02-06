@@ -13,3 +13,12 @@ init_knowledge_file.sh.
 
 
 
+-Gems
+
+Twitter Spam depends on the following gems 
+(the latest version of each should hopefully be fine, but known working versions are listed just in case)
+
+bishop => 0.3.0
+twitter => 0.6.12
+haml => 2.2.6
+sinatra => 0.9.2

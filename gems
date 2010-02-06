@@ -1,5 +1,3 @@
-source :gemcutter
-
 gem "bishop"
 gem "twitter"
 gem "haml"
