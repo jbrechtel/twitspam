@@ -21,7 +21,7 @@
 				%input(type="button" id="submit" class="button" value="check")
 		%span(id="message" style="display:none")
 		
-		%a(href="javascript:(function() { if(window.location.href.match(/twitter/) != null) { username = window.location.href.replace('http://twitter.com/','');window.open('http://www.twitspam.us/?username=' + username,'twitspam_bookmarklet','width=600,height=300');}else {alert('Unable to find twitter user!');}})()")="Twitter Spam Bookmarklet"
+		%a(href="javascript:(function() { var username=''; if(window.location.href.match(/twitter/) != null) { var urlWithoutDomain = window.location.href.replace('http://twitter.com/',''); if(urlWithoutDomain.indexOf('?') > 0) { username = urlWithoutDomain.substring(0,urlWithoutDomain.indexOf('?')); } else { username = urlWithoutDomain; } window.open('http://www.twitspam.us/?username=' + username,'twitspam_bookmarklet','width=600,height=300');} else {alert('Unable to find twitter user!');}})()")="Twitter Spam Bookmarklet"
 		
 		
 
